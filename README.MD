@@ -19,3 +19,37 @@ Example: Consider the string aabaac; here, the frequency of a is 3, frequency of
 ## Evidence: 
 
 ![image info](./images/image.png)
+
+### How to Use
+
+**Step 1:**
+
+Download or clone this repo by using the link below:
+
+```
+https://github.com/Morzkat/EncoraTest.git
+```
+
+**Step 2 (```Check everything installed correctly```):**
+
+Once you've installed, open a new command prompt and run the following command:
+
+```
+dotnet
+```
+
+**Step 3:**
+
+Build the project and its dependencies
+
+```
+dotnet build
+```
+
+**Step 4:**
+
+Run the tests:
+
+```
+dotnet test
+```
