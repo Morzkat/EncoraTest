@@ -2,33 +2,17 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Test
+namespace EncoraInsperity
 {
-    class Program
+    public class Program
     {
         static readonly char EMPTY_CHAR = '\\';
         static void Main()
         {
-            //CASE 1
-            Console.WriteLine("-------------- CASE 1 ---------------");
-            Console.WriteLine($"result: {SortingOperations("xyzxy")}");
-            Console.WriteLine($"result: {SortingOperations("abaccadcc")}");
-
-            // CASE 2
-            Console.WriteLine("-------------- CASE 2 ---------------");
-            Console.WriteLine($"result: {SortingOperations("dulgvgzwqg")}");
-            Console.WriteLine($"result: {SortingOperations("gxtjtmtywr")}");
-            Console.WriteLine($"result: {SortingOperations("hnlnxiupgt")}");
-
-            //CASE 3
-            Console.WriteLine("-------------- CASE 3 ---------------");
-            Console.WriteLine($"result: {SortingOperations("wzenwebuau")}");
-            Console.WriteLine($"result: {SortingOperations("vokfxzynwl")}");
-
-            //CASE 4
-            Console.WriteLine("-------------- CASE 4 ---------------");
-            Console.WriteLine($"result: {SortingOperations("qakmc")}");
-            Console.WriteLine($"result: {SortingOperations("rrtbk")}");
+            Console.WriteLine("Insert a string a custom string to be sort: ");
+            var input = Console.ReadLine();
+            var result = SortingOperations(input);
+            Console.WriteLine($"Result: {result}");
         }
 
         public static string SortingOperations(string input)
